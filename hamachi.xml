@@ -21,7 +21,7 @@
   <project path="librecovery" name="librecovery" remote="b2g" revision="v1-train"/>
   <project path="external/moztt" name="moztt" remote="b2g" revision="v1-train"/>
   <project path="patches" name="gonk-patches.git" remote="jld" revision="fee1e797adff28492f61ed71d52eeb3688380832" upstream="frame-pointers" />
-  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt.git" remote="jld" revision="9a31129dd741e5778131998cd613eb120567f469" />
+  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt.git" remote="jld" revision="ccd5baea4c71486a725aec80daeb1662baadcd96" />
 
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" revision="6426040f1be4a844082c9769171ce7f5341a5528"/>
@@ -89,7 +89,7 @@
   <project path="ndk" name="platform/ndk" revision="9f555971e1481854d5b4dc11b3e6af9fff4f241f"/>
   <project path="prebuilt" name="platform/prebuilt" revision="248d92592df169569c387a91db56b1fedd6e5d29"/>
   <project path="system/bluetooth" name="platform/system/bluetooth" revision="37c81289201932f6923bc7b2c457b7c63015aef6"/>
-  <project path="system/core" name="platform/system/core" revision="076933db4cc5326b6603d02a5c08e135abaf789e"/>
+  <project path="system/core" name="platform/system/core" revision="579b9ad840aba27a3cce99d70e7594db7a89ce05"/>
   <project path="system/extras" name="platform/system/extras" revision="5d954056729c57776daa3ad2c7dc6702bd278a10"/>
   <project path="system/media" name="platform/system/media" revision="fbb3d9b4c5bf59071424e820e872e3f64f0a244a"/>
   <project path="system/netd" name="platform/system/netd" revision="ce0cd776e3cd82b015381a7912875ca803c58f9e"/>

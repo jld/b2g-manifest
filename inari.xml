@@ -22,7 +22,7 @@
   <project path="librecovery" name="librecovery" remote="b2g" revision="v1-train"/>
   <project path="external/moztt" name="moztt" remote="b2g" revision="v1-train"/>
   <project path="patches" name="gonk-patches.git" remote="jld" revision="fee1e797adff28492f61ed71d52eeb3688380832" upstream="frame-pointers" />
-  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt.git" remote="jld" revision="9a31129dd741e5778131998cd613eb120567f469" />
+  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt.git" remote="jld" revision="ccd5baea4c71486a725aec80daeb1662baadcd96" />
 
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" revision="6426040f1be4a844082c9769171ce7f5341a5528"/>
