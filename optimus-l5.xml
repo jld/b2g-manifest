@@ -11,7 +11,7 @@
   <default revision="ics_chocolate" remote="caf" sync-j="4"/>
 
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build.git" remote="jld" revision="bdbd08a91d3815e0714aaf93dfe3281199fe07d2">
+  <project path="build" name="platform_build.git" remote="jld" revision="7a7a36cb137a07b5969dceae982258f39515bd3f">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="ca1f327d5acc198bb4be62fa51db2c039032c9ce" upstream="v1-train"/>
