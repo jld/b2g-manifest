@@ -7,6 +7,7 @@
   <remote name="mozillaorg" fetch="https://git.mozilla.org/releases/"/>
   <remote name="sprd" fetch="http://sprdsource.spreadtrum.com:8085/b2g/" />
   <remote name="github" fetch="git://github.com/"/>
+  <remote name="jld" fetch="git://github.com/jld/"/>
   <default revision="sprdroid4.0.3_vlx_3.0_b2g"
            remote="sprd"
            sync-j="4" />
@@ -14,14 +15,16 @@
   <!-- Gonk specific things and forks -->
   <project name="gecko" path="gecko" remote="mozillaorg" revision="master" />
   <project name="gaia" path="gaia" remote="b2g" revision="master" />
-  <project name="platform_build" path="build" remote="b2g" revision="master">
+  <project path="build" name="platform_build" remote="jld" revision="7a7a36cb137a07b5969dceae982258f39515bd3f">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="fake-dalvik" path="dalvik" remote="b2g" revision="master"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
+  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="338d5791939ec0796ab0b7b21e1446b150f49f95" />
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="master"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="master"/>
+  <project path="patches" name="gonk-patches" remote="jld" revision="3cdebaefd6bd17fc6d73b20d109eccba29378981" upstream="frame-pointers" />
+  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt" remote="jld" revision="1b56ba020af353cc447ffe41354f1a5a3766f62a" />
 
   <!-- Stock Android things -->
   <project name="platform/abi/cpp" path="abi/cpp" />
