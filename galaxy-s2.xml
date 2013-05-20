@@ -24,7 +24,7 @@
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
   <project path="gaia" name="gaia.git" remote="mozillaorg" revision="master" />
   <project path="gecko" name="gecko.git" remote="mozillaorg" revision="master" />
-  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="338d5791939ec0796ab0b7b21e1446b150f49f95" />
+  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="77bf6c835085dedfd8e6014df8ee60629939cabe" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
   <project path="patches" name="gonk-patches" remote="jld" revision="3cdebaefd6bd17fc6d73b20d109eccba29378981" upstream="frame-pointers" />
