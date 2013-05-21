@@ -7,6 +7,7 @@
   <remote name="mozilla" fetch="git://github.com/mozilla/"/>
   <remote name="caf" fetch="git://codeaurora.org/"/>
   <remote name="mozillaorg" fetch="https://git.mozilla.org/releases"/>
+  <remote name="jld" fetch="git://github.com/jld/"/>
   <default revision="ics_chocolate_rb4.2" remote="caf" sync-j="4"/>
 
   <!-- Gonk specific things and forks -->
@@ -16,10 +17,12 @@
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="v1-train"/>
   <project path="gaia" name="gaia.git" remote="mozillaorg" revision="v1-train"/>
   <project path="gecko" name="gecko.git" remote="mozillaorg" revision="gecko-18"/>
-  <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="v1-train"/>
+  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="77bf6c835085dedfd8e6014df8ee60629939cabe" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="v1-train"/>
   <project path="librecovery" name="librecovery" remote="b2g" revision="v1-train"/>
   <project path="external/moztt" name="moztt" remote="b2g" revision="v1-train"/>
+  <project path="patches" name="gonk-patches" remote="jld" revision="3cdebaefd6bd17fc6d73b20d109eccba29378981" upstream="frame-pointers" />
+  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt" remote="jld" revision="1b56ba020af353cc447ffe41354f1a5a3766f62a" />
 
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" revision="6426040f1be4a844082c9769171ce7f5341a5528"/>
