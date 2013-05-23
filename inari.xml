@@ -11,7 +11,7 @@
   <default revision="ics_chocolate_rb4.2" remote="caf" sync-j="4"/>
 
   <!-- Gonk specific things and forks -->
-  <project path="build" name="platform_build" remote="b2g" revision="v1-train">
+  <project path="build" name="platform_build" remote="jld" revision="e038da88365b293cd375870a99e72dc761704945">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="v1-train"/>

@@ -10,7 +10,7 @@
   <default remote="QRD" revision="ics_master_qrd_101" sync-j="9"/>
 
   <!-- Gonk specific things and forks -->
-  <project name="platform_build" path="build" remote="gp-b2g" revision="master">
+  <project name="platform_build" path="build" remote="jld" revision="5d81cab9692647ecef775d633acc4a80688d1ba9">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="fake-dalvik" path="dalvik" remote="b2g" revision="master"/>
