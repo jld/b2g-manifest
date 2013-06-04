@@ -25,7 +25,7 @@
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
   <project path="gaia" name="gaia.git" remote="mozillaorg" revision="master" />
   <project path="gecko" name="gecko.git" remote="mozillaorg" revision="master" />
-  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="77bf6c835085dedfd8e6014df8ee60629939cabe" />
+  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="305b43614946cd0cd35b0efc2d2b93b5a0b49d2a" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="librecovery" name="librecovery" remote="b2g" revision="master" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="master" />
