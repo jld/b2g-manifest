@@ -5,6 +5,7 @@
   <remote fetch="git://github.com/mozilla-b2g/" name="b2g"/>
   <remote fetch="git://github.com/mozilla/" name="mozilla"/>
   <remote fetch="git://github.com/apitrace/" name="apitrace"/>
+  <remote name="jld" fetch="git://github.com/jld/"/>
 
   <!-- B2G specific things. -->
   <project name="platform_build" path="build" remote="b2g" revision="b2g-4.2.2_r1">
@@ -14,8 +15,10 @@
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="master"/>
   <project name="gaia" path="gaia" remote="b2g" revision="master"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
+  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="87d91fb5fb7654758940723b9f1173052bc4f4a5" />
   <project name="moztt" path="external/moztt" remote="b2g" revision="master"/>
+  <project path="patches" name="gonk-patches" remote="jld" revision="1663963306898258f74213b87fe5bb73aa4d3a79" upstream="frame-pointers" />
+  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt" remote="jld" revision="1b56ba020af353cc447ffe41354f1a5a3766f62a" />
   <project name="apitrace" path="external/apitrace" remote="apitrace" revision="master" />
 
   <!-- Stock Android things -->

@@ -7,6 +7,7 @@
   <remote name="mozillaorg" fetch="https://git.mozilla.org/releases/"/>
   <remote name="sprd" fetch="http://sprdsource.spreadtrum.com:8085/b2g/" />
   <remote name="apitrace" fetch="git://github.com/apitrace/" />
+  <remote name="jld" fetch="git://github.com/jld/"/>
   <default revision="sprdroid4.0.3_vlx_3.0_b2g"
            remote="sprd"
            sync-j="4" />
@@ -18,10 +19,12 @@
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
   <project name="fake-dalvik" path="dalvik" remote="b2g" revision="master"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="master"/>
+  <project path="gonk-misc" name="gonk-misc" remote="jld" revision="87d91fb5fb7654758940723b9f1173052bc4f4a5" />
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="master"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="master"/>
+  <project path="patches" name="gonk-patches" remote="jld" revision="1663963306898258f74213b87fe5bb73aa4d3a79" upstream="frame-pointers" />
+  <project path="prebuilt/alt-toolchain" name="b2g-toolchain-prebuilt" remote="jld" revision="1b56ba020af353cc447ffe41354f1a5a3766f62a" />
   <project path="external/valgrind" name="valgrind" remote="b2g" revision="fxos" />
   <project path="external/VEX" name="vex" remote="b2g" revision="fxos" />
   <project path="external/apitrace" name="apitrace" remote="apitrace" revision="master" />
