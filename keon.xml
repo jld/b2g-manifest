@@ -7,6 +7,7 @@
   <remote fetch="git://android.git.linaro.org/" name="linaro"/>
   <remote name="QRD" fetch="git://codeaurora.org/quic/qrd-android" />
   <remote name="apitrace" fetch="git://github.com/apitrace/" />
+  <remote name="jld" fetch="git://github.com/jld/" />
   <default remote="QRD" revision="ics_master_qrd_101" sync-j="9"/>
 
   <!-- Gonk specific things and forks -->
@@ -101,7 +102,7 @@
   <!-- Keon specific things -->
   <project path="device/qcom/msm7627a" name="device_qcom_msm7627a" remote="gp-b2g" revision="master" />
   <project path="device/geeksphone/keon" name="device-gp-keon" remote="b2g" revision="master" />
-  <project path="kernel" name="gp-keon-kernel" remote="gp-b2g" revision="master" />
+  <project path="kernel" name="gp-keon-kernel" remote="jld" revision="add-elf-h" />
   <project path="external/compat-wireless" name="external_compat-wireless" remote="gp-b2g" revision="master" />
   <project path="frameworks/base" name="frameworks_base" remote="gp-b2g" revision="master" />
   <project path="hardware/ril" name="hardware_ril" remote="gp-b2g" revision="keon" />
