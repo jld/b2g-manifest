@@ -2,13 +2,15 @@
 
   <include name="base-caf-jb.xml"/>
 
+  <remote fetch="https://github.com/t2m-foxfone" name="t2m" />
+
   <default remote="caf" revision="jb_3.2" sync-j="4"/>
 
   <!-- Flame specific things -->
   <project name="device/generic/armv7-a-neon" path="device/generic/armv7-a-neon"/>
   <project name="device/qcom/common" path="device/qcom/common" revision="b2g_jb_3.2"/>
   <project name="device-flame" path="device/t2m/flame" remote="b2g" revision="master"/>
-  <project name="kernel/msm" path="kernel" revision="b2g_jb_3.2"/>
+  <project name="kernel_msm" path="kernel" remote="t2m" revision="foxfone-one" />
   <project name="platform/bootable/recovery" path="bootable/recovery" revision="b2g_jb_3.2"/>
   <project name="platform/external/bluetooth/bluedroid" path="external/bluetooth/bluedroid" revision="b2g_jb_3.2"/>
   <project name="platform/external/bluetooth/bluez" path="external/bluetooth/bluez" revision="b2g/jb_mr1_rb2.17"/>
@@ -31,6 +33,11 @@
   <project name="platform/system/core" path="system/core" revision="b2g_jb_3.2"/>
   <project name="platform_system_nfcd" path="system/nfcd" remote="b2g" revision="master"/>
   <project name="platform/system/qcom" path="system/qcom" revision="jb_3.2.5_rb1.7"/>
-  <project name="platform/vendor/qcom/msm8610" path="device/qcom/msm8610" revision="b2g_jb_3.2"/>
+  <project name="platform/vendor/qcom/msm8610" path="platform_vendor_qcom_msm8610" remote="t2m" revision="foxfone-one"/>
+
+  <remove-project name="platform_build" />
+  <project name="platform_build" path="build" remote="t2m" revision="foxfone-one">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
 
 </manifest>
